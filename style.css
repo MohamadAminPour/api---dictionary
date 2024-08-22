@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(195, 123, 246);
+}
+button,
+input {
+  outline: none;
+  border: none;
+}
+
+.container {
+  width: 27rem;
+  height: auto;
+  padding:2.5rem 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgb(113, 113, 113);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: rgb(149, 0, 255);
+}
+
+.searchbar input {
+  padding: 0.5rem;
+  width: 17rem;
+  border-radius: 0.2rem;
+  background-color: rgb(241, 241, 241);
+  transition: .3s;
+}
+.searchbar input:focus{
+  box-shadow: 0 5px 15px rgb(230, 230, 230);
+}
+.searchbar button {
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 5rem;
+  border-radius: 0.2rem;
+  background-color: rgb(33, 30, 30);
+  color: white;
+}
+
+.result {
+  width: 22rem;
+  margin-top: 2rem;
+}
+.word,
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.word i {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.word i:hover {
+  color: rgb(149, 0, 255);
+}
+.details {
+  font-size: 0.9rem;
+  justify-content: flex-start;
+  color: rgb(153, 153, 153);
+  margin-top: 0.5rem;
+}
+.word-meaning {
+  margin-top: 1.5rem;
+  text-align: justify;
+}
+
+.word-example {
+  border-left: 0.3rem solid rgb(195, 123, 246);
+  padding: 0 0.5rem;
+  margin-top: 1rem;
+  font-style: italic;
+}
